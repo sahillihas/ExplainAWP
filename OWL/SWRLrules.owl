@@ -1,0 +1,880 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/91759/ontologies/2020/2/untitled-ontology-7"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/91759/ontologies/2020/2/untitled-ontology-7">
+    <Prefix name="" IRI="http://www.semanticweb.org/91759/ontologies/2020/2/untitled-ontology-7"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrla" IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Declaration>
+        <Class IRI="#AfterState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BeforeState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProblemStatement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QuestionState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransferState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Involves"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGained"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNewQuant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasQuant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involvesAjent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#transfersTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#quantType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#quantValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Agent1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Agent2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PS1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Q1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Q1-new"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Q2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Q2-new"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Q3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#S1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#S2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#S3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#S4"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Agent1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Agent2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProblemStatement"/>
+        <NamedIndividual IRI="#PS1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Quantity"/>
+        <NamedIndividual IRI="#Q1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Quantity"/>
+        <NamedIndividual IRI="#Q1-new"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Quantity"/>
+        <NamedIndividual IRI="#Q2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Quantity"/>
+        <NamedIndividual IRI="#Q2-new"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Quantity"/>
+        <NamedIndividual IRI="#Q3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AfterState"/>
+        <NamedIndividual IRI="#S1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BeforeState"/>
+        <NamedIndividual IRI="#S1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#QuestionState"/>
+        <NamedIndividual IRI="#S1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransferState"/>
+        <NamedIndividual IRI="#S1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AfterState"/>
+        <NamedIndividual IRI="#S2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BeforeState"/>
+        <NamedIndividual IRI="#S2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#QuestionState"/>
+        <NamedIndividual IRI="#S2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransferState"/>
+        <NamedIndividual IRI="#S2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransferState"/>
+        <NamedIndividual IRI="#S3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#QuestionState"/>
+        <NamedIndividual IRI="#S4"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLost"/>
+        <NamedIndividual IRI="#Agent1"/>
+        <NamedIndividual IRI="#Q3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNewQuant"/>
+        <NamedIndividual IRI="#Agent1"/>
+        <NamedIndividual IRI="#Q1-new"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasQuant"/>
+        <NamedIndividual IRI="#Agent1"/>
+        <NamedIndividual IRI="#Q1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#transfersTo"/>
+        <NamedIndividual IRI="#Agent1"/>
+        <NamedIndividual IRI="#Agent2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGained"/>
+        <NamedIndividual IRI="#Agent2"/>
+        <NamedIndividual IRI="#Q3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNewQuant"/>
+        <NamedIndividual IRI="#Agent2"/>
+        <NamedIndividual IRI="#Q2-new"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasQuant"/>
+        <NamedIndividual IRI="#Agent2"/>
+        <NamedIndividual IRI="#Q2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Involves"/>
+        <NamedIndividual IRI="#PS1"/>
+        <NamedIndividual IRI="#S1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Involves"/>
+        <NamedIndividual IRI="#PS1"/>
+        <NamedIndividual IRI="#S2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesAjent"/>
+        <NamedIndividual IRI="#S1"/>
+        <NamedIndividual IRI="#Agent1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesAjent"/>
+        <NamedIndividual IRI="#S2"/>
+        <NamedIndividual IRI="#Agent2"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#quantType"/>
+        <NamedIndividual IRI="#Q1"/>
+        <Literal>Book</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#quantValue"/>
+        <NamedIndividual IRI="#Q1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#quantType"/>
+        <NamedIndividual IRI="#Q2"/>
+        <Literal>Book</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#quantValue"/>
+        <NamedIndividual IRI="#Q2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#quantType"/>
+        <NamedIndividual IRI="#Q3"/>
+        <Literal>Book</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#quantValue"/>
+        <NamedIndividual IRI="#Q3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Involves"/>
+        <Class IRI="#ProblemStatement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGained"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLost"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNewQuant"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasQuant"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involvesAjent"/>
+        <Class IRI="#AfterState"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involvesAjent"/>
+        <Class IRI="#BeforeState"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involvesAjent"/>
+        <Class IRI="#QuestionState"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involvesAjent"/>
+        <Class IRI="#TransferState"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#transfersTo"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Involves"/>
+        <Class IRI="#AfterState"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Involves"/>
+        <Class IRI="#BeforeState"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Involves"/>
+        <Class IRI="#QuestionState"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Involves"/>
+        <Class IRI="#TransferState"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGained"/>
+        <Class IRI="#Quantity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLost"/>
+        <Class IRI="#Quantity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasNewQuant"/>
+        <Class IRI="#Quantity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasQuant"/>
+        <Class IRI="#Quantity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involvesAjent"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#transfersTo"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#quantType"/>
+        <Class IRI="#Quantity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#quantValue"/>
+        <Class IRI="#Quantity"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#quantType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#quantValue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Old Value for Gained</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S4</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#Involves"/>
+                <Variable IRI="#prob"/>
+                <Variable IRI="#sentence"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#involvesAjent"/>
+                <Variable IRI="#sentence"/>
+                <Variable IRI="#person1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#transfersTo"/>
+                <Variable IRI="#person2"/>
+                <Variable IRI="#person1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasGained"/>
+                <Variable IRI="#person1"/>
+                <Variable IRI="#quant"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantValue"/>
+                <Variable IRI="#quant"/>
+                <Variable IRI="#t"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantType"/>
+                <Variable IRI="#quant"/>
+                <Variable IRI="#type1"/>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNewQuant"/>
+                <Variable IRI="#person1"/>
+                <Variable IRI="#newQuant"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantValue"/>
+                <Variable IRI="#newQuant"/>
+                <Variable IRI="#x"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantType"/>
+                <Variable IRI="#newQuant"/>
+                <Variable IRI="#type2"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:equal">
+                <Variable IRI="#type1"/>
+                <Variable IRI="#type2"/>
+            </BuiltInAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:subtract">
+                <Variable IRI="#v1"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#t"/>
+            </BuiltInAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasQuant"/>
+                <Variable IRI="#person1"/>
+                <Variable IRI="#old"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantType"/>
+                <Variable IRI="#old"/>
+                <Variable IRI="#type1"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantValue"/>
+                <Variable IRI="#old"/>
+                <Variable IRI="#v1"/>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Transfer Value for Gained</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S5</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#Involves"/>
+                <Variable IRI="#prob"/>
+                <Variable IRI="#sentence"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#involvesAjent"/>
+                <Variable IRI="#sentence"/>
+                <Variable IRI="#person1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasQuant"/>
+                <Variable IRI="#person1"/>
+                <Variable IRI="#oldQuant"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantValue"/>
+                <Variable IRI="#oldQuant"/>
+                <Variable IRI="#oldVal"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantType"/>
+                <Variable IRI="#oldQuant"/>
+                <Variable IRI="#t1"/>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNewQuant"/>
+                <Variable IRI="#person1"/>
+                <Variable IRI="#newQuant"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantValue"/>
+                <Variable IRI="#newQuant"/>
+                <Variable IRI="#newVal"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantType"/>
+                <Variable IRI="#newQuant"/>
+                <Variable IRI="#t2"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:equal">
+                <Variable IRI="#t1"/>
+                <Variable IRI="#t2"/>
+            </BuiltInAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:subtract">
+                <Variable IRI="#val"/>
+                <Variable IRI="#newVal"/>
+                <Variable IRI="#oldVal"/>
+            </BuiltInAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasGained"/>
+                <Variable IRI="#person1"/>
+                <Variable IRI="#quant"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantValue"/>
+                <Variable IRI="#quant"/>
+                <Variable IRI="#val"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantType"/>
+                <Variable IRI="#quant"/>
+                <Variable IRI="#t1"/>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>New Value for Gained</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S2</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#Involves"/>
+                <Variable IRI="#prob"/>
+                <Variable IRI="#sentence"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#involvesAjent"/>
+                <Variable IRI="#sentence"/>
+                <Variable IRI="#person1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#transfersTo"/>
+                <Variable IRI="#person2"/>
+                <Variable IRI="#person1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasQuant"/>
+                <Variable IRI="#person1"/>
+                <Variable IRI="#oldQuant"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantValue"/>
+                <Variable IRI="#oldQuant"/>
+                <Variable IRI="#xold"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantType"/>
+                <Variable IRI="#oldQuant"/>
+                <Variable IRI="#told"/>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasGained"/>
+                <Variable IRI="#person1"/>
+                <Variable IRI="#t"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantValue"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#tval"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantType"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#ttype"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:equal">
+                <Variable IRI="#told"/>
+                <Variable IRI="#ttype"/>
+            </BuiltInAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:add">
+                <Variable IRI="#xnew"/>
+                <Variable IRI="#xold"/>
+                <Variable IRI="#tval"/>
+            </BuiltInAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNewQuant"/>
+                <Variable IRI="#person1"/>
+                <Variable IRI="#newQuant"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantValue"/>
+                <Variable IRI="#newQuant"/>
+                <Variable IRI="#xnew"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantType"/>
+                <Variable IRI="#newQuant"/>
+                <Variable IRI="#told"/>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Old Value for Loss</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S3</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#Involves"/>
+                <Variable IRI="#prob"/>
+                <Variable IRI="#sentence"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#involvesAjent"/>
+                <Variable IRI="#sentence"/>
+                <Variable IRI="#person1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#transfersTo"/>
+                <Variable IRI="#person1"/>
+                <Variable IRI="#person2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasLost"/>
+                <Variable IRI="#person1"/>
+                <Variable IRI="#quant"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantValue"/>
+                <Variable IRI="#quant"/>
+                <Variable IRI="#t"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantType"/>
+                <Variable IRI="#quant"/>
+                <Variable IRI="#type1"/>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNewQuant"/>
+                <Variable IRI="#person1"/>
+                <Variable IRI="#newQuant"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantValue"/>
+                <Variable IRI="#newQuant"/>
+                <Variable IRI="#x"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantType"/>
+                <Variable IRI="#newQuant"/>
+                <Variable IRI="#type2"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:equal">
+                <Variable IRI="#type1"/>
+                <Variable IRI="#type2"/>
+            </BuiltInAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:add">
+                <Variable IRI="#v1"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#t"/>
+            </BuiltInAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasQuant"/>
+                <Variable IRI="#person1"/>
+                <Variable IRI="#old"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantType"/>
+                <Variable IRI="#old"/>
+                <Variable IRI="#type1"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantValue"/>
+                <Variable IRI="#old"/>
+                <Variable IRI="#v1"/>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Transfer Value for Loss</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S6</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#Involves"/>
+                <Variable IRI="#prob"/>
+                <Variable IRI="#sentence"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#involvesAjent"/>
+                <Variable IRI="#sentence"/>
+                <Variable IRI="#person1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#transfersTo"/>
+                <Variable IRI="#person1"/>
+                <Variable IRI="#person2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasQuant"/>
+                <Variable IRI="#person1"/>
+                <Variable IRI="#oldQuant"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantValue"/>
+                <Variable IRI="#oldQuant"/>
+                <Variable IRI="#oldVal"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantType"/>
+                <Variable IRI="#oldQuant"/>
+                <Variable IRI="#t1"/>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNewQuant"/>
+                <Variable IRI="#person1"/>
+                <Variable IRI="#newQuant"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantValue"/>
+                <Variable IRI="#newQuant"/>
+                <Variable IRI="#newVal"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantType"/>
+                <Variable IRI="#newQuant"/>
+                <Variable IRI="#t2"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:equal">
+                <Variable IRI="#t1"/>
+                <Variable IRI="#t2"/>
+            </BuiltInAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:subtract">
+                <Variable IRI="#val"/>
+                <Variable IRI="#oldVal"/>
+                <Variable IRI="#newVal"/>
+            </BuiltInAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasLost"/>
+                <Variable IRI="#person1"/>
+                <Variable IRI="#quant"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantValue"/>
+                <Variable IRI="#quant"/>
+                <Variable IRI="#val"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantType"/>
+                <Variable IRI="#quant"/>
+                <Variable IRI="#t1"/>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>New Value for Loss</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S1</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#Involves"/>
+                <Variable IRI="#prob"/>
+                <Variable IRI="#sentence"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#involvesAjent"/>
+                <Variable IRI="#sentence"/>
+                <Variable IRI="#person1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#transfersTo"/>
+                <Variable IRI="#person1"/>
+                <Variable IRI="#person2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasQuant"/>
+                <Variable IRI="#person1"/>
+                <Variable IRI="#oldQuant"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantValue"/>
+                <Variable IRI="#oldQuant"/>
+                <Variable IRI="#xold"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantType"/>
+                <Variable IRI="#oldQuant"/>
+                <Variable IRI="#told"/>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasLost"/>
+                <Variable IRI="#person1"/>
+                <Variable IRI="#t"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantValue"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#tval"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantType"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#ttype"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:equal">
+                <Variable IRI="#told"/>
+                <Variable IRI="#ttype"/>
+            </BuiltInAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:subtract">
+                <Variable IRI="#xnew"/>
+                <Variable IRI="#xold"/>
+                <Variable IRI="#tval"/>
+            </BuiltInAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNewQuant"/>
+                <Variable IRI="#person1"/>
+                <Variable IRI="#newQuant"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantValue"/>
+                <Variable IRI="#newQuant"/>
+                <Variable IRI="#xnew"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantType"/>
+                <Variable IRI="#newQuant"/>
+                <Variable IRI="#told"/>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

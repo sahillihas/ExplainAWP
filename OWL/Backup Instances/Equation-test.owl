@@ -1,0 +1,883 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#"
+     xml:base="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:Equation-test="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#has">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#LinearEquation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Equation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#hasLeft -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#hasLeft">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Equation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Equation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#hasOp -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#hasOp">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Equation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Operator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#hasRight -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#hasRight">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Equation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Equation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#hasVar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#hasVar">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Equation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Variable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#involvesLE -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#involvesLE">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#MathProblem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#LinearEquation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#usesEq -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#usesEq">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Equation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Equation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#opSign -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#opSign">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Operator"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#varValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#varValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Equation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Equation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Equation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#LinearEquation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#LinearEquation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#MathProblem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#MathProblem">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Operator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Operator">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Variable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Variable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Variable"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Equation"/>
+        <Equation-test:hasLeft rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq2"/>
+        <Equation-test:hasOp rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Op1"/>
+        <Equation-test:hasRight rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Equation"/>
+        <Equation-test:hasLeft rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq3"/>
+        <Equation-test:hasOp rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Op2"/>
+        <Equation-test:hasRight rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Equation"/>
+        <Equation-test:hasLeft rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq6"/>
+        <Equation-test:hasOp rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Op3"/>
+        <Equation-test:hasRight rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Equation"/>
+        <Equation-test:varValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</Equation-test:varValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Equation"/>
+        <Equation-test:varValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Equation-test:varValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Equation"/>
+        <Equation-test:varValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</Equation-test:varValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Equation"/>
+        <Equation-test:varValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</Equation-test:varValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Equation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#LE1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#LE1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#LinearEquation"/>
+        <Equation-test:has rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq1"/>
+        <Equation-test:has rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq2"/>
+        <Equation-test:has rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq3"/>
+        <Equation-test:has rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Eq4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Op1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Op1">
+        <Equation-test:opSign>+</Equation-test:opSign>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Op2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Op2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Operator"/>
+        <Equation-test:opSign>-</Equation-test:opSign>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Op3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Op3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Operator"/>
+        <Equation-test:opSign>*</Equation-test:opSign>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Op4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Op4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Operator"/>
+        <Equation-test:opSign>/</Equation-test:opSign>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Prob1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Prob1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#MathProblem"/>
+        <Equation-test:involvesLE rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#LE1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#prob">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#le">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#e1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#l">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#v1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#v2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Add</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#involvesLE"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#prob"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#le"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#has"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#le"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#e1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#hasLeft"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#e1"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#l"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#hasRight"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#e1"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#r"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#hasOp"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#e1"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Op1"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#varValue"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#l"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#v1"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#varValue"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#r"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#v2"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#add"/>
+                                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#a"/>
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#v1"/>
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#v2"/>
+                                                                                </swrl:arguments>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#varValue"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#e1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sub</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#involvesLE"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#prob"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#le"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#has"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#le"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#e1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#hasLeft"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#e1"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#l"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#hasRight"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#e1"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#r"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#hasOp"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#e1"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Op2"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#varValue"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#l"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#v1"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#varValue"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#r"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#v2"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#subtract"/>
+                                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#a"/>
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#v1"/>
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#v2"/>
+                                                                                </swrl:arguments>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#varValue"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#e1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mul</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#involvesLE"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#prob"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#le"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#has"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#le"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#e1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#hasLeft"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#e1"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#l"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#hasRight"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#e1"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#r"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#hasOp"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#e1"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Op3"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#varValue"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#l"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#v1"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#varValue"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#r"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#v2"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#multiply"/>
+                                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#a"/>
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#v1"/>
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#v2"/>
+                                                                                </swrl:arguments>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#varValue"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#e1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Div</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#involvesLE"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#prob"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#le"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#has"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#le"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#e1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#hasLeft"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#e1"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#l"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#hasRight"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#e1"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#r"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#hasOp"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#e1"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#Op4"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#varValue"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#l"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#v1"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#varValue"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#r"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#v2"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#divide"/>
+                                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#a"/>
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#v1"/>
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#v2"/>
+                                                                                </swrl:arguments>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/Equation-test#varValue"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#e1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/sahil/ontologies/2022/6/untitled-ontology-23#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
