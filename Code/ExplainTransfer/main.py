@@ -1,7 +1,7 @@
 from owlready2 import *
 
 # onto_path.append("/Applications/MAMP/htdocs/")
-onto = get_ontology("file:///Applications/MAMP/htdocs/SWRLrdf.owl").load()
+onto = get_ontology("file://OWL/SWRLrdf.owl").load()
 # print(list(onto.classes()))
 # print(list(onto.individuals()))
 with onto:
