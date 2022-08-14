@@ -1,0 +1,324 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/sahil/ontologies/2022/7/untitled-ontology-25"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/sahil/ontologies/2022/7/untitled-ontology-25">
+    <Prefix name="" IRI="http://www.semanticweb.org/sahil/ontologies/2022/7/untitled-ontology-25"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#1D"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2D"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDet"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasVal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#X0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#X1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#X2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Y01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Y02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Y03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Y10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Y11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Y12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Y20"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Y21"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Y22"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Z1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#test"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#1D"/>
+        <NamedIndividual IRI="#X0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#1D"/>
+        <NamedIndividual IRI="#X1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#1D"/>
+        <NamedIndividual IRI="#X2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#2D"/>
+        <NamedIndividual IRI="#Y01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#2D"/>
+        <NamedIndividual IRI="#Y02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#2D"/>
+        <NamedIndividual IRI="#Y03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#2D"/>
+        <NamedIndividual IRI="#Y10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#2D"/>
+        <NamedIndividual IRI="#Y11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#2D"/>
+        <NamedIndividual IRI="#Y12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#2D"/>
+        <NamedIndividual IRI="#Y20"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#2D"/>
+        <NamedIndividual IRI="#Y21"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#2D"/>
+        <NamedIndividual IRI="#Y22"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#2D"/>
+        <NamedIndividual IRI="#Z1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#2D"/>
+        <NamedIndividual IRI="#test"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMat"/>
+        <NamedIndividual IRI="#X0"/>
+        <NamedIndividual IRI="#Y01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMat"/>
+        <NamedIndividual IRI="#X0"/>
+        <NamedIndividual IRI="#Y02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMat"/>
+        <NamedIndividual IRI="#X0"/>
+        <NamedIndividual IRI="#Y03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMat"/>
+        <NamedIndividual IRI="#X1"/>
+        <NamedIndividual IRI="#Y10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMat"/>
+        <NamedIndividual IRI="#X1"/>
+        <NamedIndividual IRI="#Y11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMat"/>
+        <NamedIndividual IRI="#X1"/>
+        <NamedIndividual IRI="#Y12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMat"/>
+        <NamedIndividual IRI="#X2"/>
+        <NamedIndividual IRI="#Y20"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMat"/>
+        <NamedIndividual IRI="#X2"/>
+        <NamedIndividual IRI="#Y21"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMat"/>
+        <NamedIndividual IRI="#X2"/>
+        <NamedIndividual IRI="#Y22"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVal"/>
+        <NamedIndividual IRI="#Y01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVal"/>
+        <NamedIndividual IRI="#Y02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVal"/>
+        <NamedIndividual IRI="#Y03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVal"/>
+        <NamedIndividual IRI="#Y10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVal"/>
+        <NamedIndividual IRI="#Y11"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVal"/>
+        <NamedIndividual IRI="#Y12"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVal"/>
+        <NamedIndividual IRI="#Y20"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVal"/>
+        <NamedIndividual IRI="#Y21"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVal"/>
+        <NamedIndividual IRI="#Y22"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMat"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMat"/>
+        <Class IRI="#1D"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMat"/>
+        <Class IRI="#2D"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDet"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasVal"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDet"/>
+        <Class IRI="#1D"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDet"/>
+        <Class IRI="#2D"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasVal"/>
+        <Class IRI="#2D"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDet"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasVal"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Det</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S1</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasMat"/>
+                <Variable IRI="#a1"/>
+                <Variable IRI="#b11"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasMat"/>
+                <Variable IRI="#a1"/>
+                <Variable IRI="#b12"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasMat"/>
+                <Variable IRI="#a1"/>
+                <Variable IRI="#b13"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasMat"/>
+                <Variable IRI="#a2"/>
+                <Variable IRI="#b21"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasMat"/>
+                <Variable IRI="#a2"/>
+                <Variable IRI="#b22"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasMat"/>
+                <Variable IRI="#a2"/>
+                <Variable IRI="#b23"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasVal"/>
+                <Variable IRI="#b11"/>
+                <Variable IRI="#val"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasVal"/>
+                <NamedIndividual IRI="#test"/>
+                <Variable IRI="#val"/>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
